@@ -1,43 +1,58 @@
-# 📊 Customer Behaviour Analysis  
+# 📊 Customer Behavior Dashboard  
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)  
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)  
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)  
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)  
 
 ---
 
 ## 🚀 Overview
 
-This project analyzes customer and order data to uncover patterns in **delivery performance** and **customer behavior**.
+This project analyzes customer shopping data and builds a **dashboard** to understand customer behavior, purchase patterns, and key business insights.
 
 ---
 
-## 🔍 What You’ll Find
+## 📊 Dashboard Preview
 
-- 📦 Late delivery analysis  
-- 🌍 Region-wise performance  
-- 👥 Customer segmentation insights  
-- 🚚 Key factors affecting delays  
+![Dashboard](visuals/dashboard.png)
 
+---
 
+## 🔍 Key Features
+
+- Customer segmentation using **age groups**
+- Purchase behavior analysis  
+- Subscription-based insights  
+- Sales by category  
+- Review rating analysis  
+
+---
 
 ## 🛠️ Tech Stack
 
 - Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Seaborn  
-
+- Pandas / NumPy  
+- MySQL (SQLAlchemy)  
+- Data Visualization (Dashboard)  
 
 ---
 
-## 📌 Key Insight
+## ⚙️ Data Processing
 
-Late deliveries are strongly influenced by:
-- Shipping Mode  
-- Order Region  
-- Customer Segment  
+- Handled missing values using **median (grouped by category)**  
+- Cleaned column names for consistency  
+- Created new features:
+  - `age_group` (using quantiles)
+  - `purchase_frequency_days` (mapped values)
+
+---
+
+## 📌 Key Insights
+
+- Majority customers are **non-subscribers**
+- Average purchase value is around **$59**
+- Young adults contribute highest sales  
+- Clothing category dominates purchases  
 
 ---
 
