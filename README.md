@@ -29,7 +29,6 @@ This project analyzes customer and order data to uncover patterns in **delivery 
 - Matplotlib  
 - Seaborn  
 
----
 
 ---
 
